@@ -4,7 +4,7 @@ JDK :- It's a software development kit required to develop java applications.
 JRE :- It's part of JDK that provides the libraries and other components to run applications.
 JVM :- It's a part of JRE and responsible for executing the Java bytecode.
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <!-- Showing Output -->
 
@@ -21,7 +21,7 @@ System.out.println("Hello, World!");
 }
 }
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <!-- Data types-->
 
 There are two data type in java
@@ -35,7 +35,7 @@ There are two data type in java
    character literals --> 'a', 'A', 'N' , 'q' , etc...
    string literals --> "hi", "hello", "whats'up"
 
----------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <!-- Naming Conversions -->
 
 Camel case :- It is a style of writing where The first word starts with a lowercase letter. Every subsequent word starts with a capital letter  
@@ -45,7 +45,7 @@ Example :- first_name, max_speed_limit.
 Kebab-case :- kebab-case means all lowercase words separated by hyphens (-).  
 Example :- my-variable-name
 
----------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <!-- Escape Sequences -->
 
 \n --> New line (The escape sequence \n is used to insert a new line in the output.)
@@ -72,12 +72,12 @@ Example :- my-variable-name
 
 <!-- Example --> System.out.println("She said \"Hello\""); --> Output :- She said "Hello"
 
----------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <!-- Keywords -->
 
 The complete list of Java keywords is:- abstract, assert, boolean, break, byte, case, catch, char, class, const, continue, default, do, double, else, enum, extends, final, finally, float, for, goto, if, implements, import, instanceof, int, interface, long, native, new, null, package, private, protected, public, return, short, static, strictfp, super, switch, synchronized, this, throw, throws, transient, try, void, volatile, and while.
 
----------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <!-- Rules for Naming Identifiers -->
 
 1. It Can only contain Letters (A-Z, a-z), Digits (0-9), Underscore (\_), Dollar sign ($)
@@ -87,7 +87,7 @@ The complete list of Java keywords is:- abstract, assert, boolean, break, byte, 
 5. An identifier cannot contain spaces; for example, first name is invalid, but firstName is valid.
 6. Identifier can be of any length, but meaningful and readable names are recommended for better understanding.
 
----------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <!--User Input -->
 
 nextLine() --> It Reads the entire line Example :- Hello World from Java
@@ -126,7 +126,7 @@ Scanner sc = new Scanner(System.in);
 
 }
 
----------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <!-- Challenges :- -->
 
 1. Create a program to input name of the person and respond with "welcome NAME to Coding"
@@ -168,7 +168,7 @@ Scanner sc = new Scanner(System.in);
    Enter second number: 7
    The sum is: 12.0
 
----------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <!-- Type Conversion and Casting :- -->
 
 ->Type conversion means changing one data type into another. In Java, this can happen automatically or manually.
@@ -199,14 +199,13 @@ public static void main(String[] args) {
     }
 
 }
+
 Output :-
 Widening Conversion (int → double): 100.0
 Narrowing Conversion (double → int): 99
 
----------------------------------------------------------------------------------------------------------------
-
-                                     <!-- Operators, If-else  -->
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                         <!-- Operators, If-else  -->
 1.  Arithmetic Operators :-
     -> It is Used for basic math operations.
     | Operator | Description | Example | Output |
@@ -242,6 +241,7 @@ Narrowing Conversion (double → int): 99
         }
 
     }
+    
     Output :-
     a = 20, b = 6
     Addition (a + b) : 26
@@ -249,7 +249,7 @@ Narrowing Conversion (double → int): 99
     Multiplication (a \* b) : 120
     Division (a / b) : 3
     Modulus (a % b) : 2
----------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2.  Assignment (Shorthand) Operators :-
     -> It is Used to assign values to variables.
     | Operator | Example | Meaning |
@@ -290,6 +290,7 @@ Narrowing Conversion (double → int): 99
         }
 
     }
+    
     Output :-
     Initial Score: 50
     After += 10: 60
@@ -297,7 +298,7 @@ Narrowing Conversion (double → int): 99
     After \*= 2: 110
     After /= 4: 27
     After %= 3: 0
----------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <!-- Challenge -->
 1.  Write a program to swap two numbers :-
     import java.util.Scanner;
@@ -324,24 +325,26 @@ Narrowing Conversion (double → int): 99
         }
 
     }
+    
     Output :-
     Enter first number (a): 5
     Enter second number (b): 10
 
-Before Swap:
+Before Swap:-
 a = 5, b = 10
 
-After Swap:
+After Swap:-
 a = 10, b = 5
----------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 3. Unary operators :-
    -> Unary operators in Java are operators that work on only one operand to perform an operation.
 
 | Operator Type | Expression | Used Value | Final Value | Description
 | Pre-increment | ++x | 6 | 6 |increment by 1 first and then use in statement
-| Post-increment | x++ | 5 | 6 |use current value in statement then increment
+| Post-increment| x++ | 5 | 6 |use current value in statement then increment
 | Pre-decrement | --x | 4 | 4 |decrement by 1 first and then use in statement
-| Post-decrement | x-- | 5 | 4 |use current value in statement then decrement
+| Post-decrement| x-- | 5 | 4 |use current value in statement then decrement
 
 <!-- Example :- -->
 public class UnaryOperatorsExample {
@@ -365,6 +368,7 @@ public static void main(String[] args) {
     }
 
 }
+
 Output :-
 Unary plus (+a): 5
 Unary minus (-a): -5
@@ -374,9 +378,11 @@ Value of a after post-increment: 7
 Pre-decrement (--a): 6
 Post-decrement (a--): 6
 Value of a after post-decrement: 5
----------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <!-- Challenges -->
 1.  Create a program to calculate products of two floating point numbers.
+   
     import java.util.Scanner;
     public class ProductOfNumbers {
     public static void main(String[] args) {
@@ -397,10 +403,10 @@ Value of a after post-decrement: 5
 
     }
     Output :- Enter first number: 2.5 Enter second number: 4.2 Product: 10.5
----------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2. create a program to calculate the area of triangle. Area= 1/2*B*H.
-   import java.util.Scanner;
 
+import java.util.Scanner;
 public class AreaOfTriangle {
 public static void main(String[] args) {
 Scanner sc = new Scanner(System.in);
@@ -423,10 +429,11 @@ Output :-
 Enter base of the triangle: 5
 Enter height of the triangle: 10
 Area of the triangle: 25.0
----------------------------------------------------------------------------------------------------------------
-3. create a program to calculate simple interest. interest=(PxTxR)/100
-   import java.util.Scanner;
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. create a program to calculate simple interest. interest=(PxTxR)/100
+
+import java.util.Scanner;
 public class SimpleInterest {
 public static void main(String[] args) {
 Scanner sc = new Scanner(System.in);
@@ -453,7 +460,8 @@ Enter Principal amount (P): 10000
 Enter Time in years (T): 2
 Enter Rate of Interest (R): 5
 Simple Interest: 1000.0
----------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 4. Create program to convert fahrenheit to celsius.
 
 import java.util.Scanner;
@@ -475,9 +483,10 @@ Scanner sc = new Scanner(System.in);
 Output :-
 Enter temperature in Fahrenheit: 98.6
 Temperature in Celsius: 37.0
----------------------------------------------------------------------------------------------------------------
-<!-- If Else -->
--> if and else are decision-making statements in Java.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                <!-- If Else -->
+-> If and else are decision-making statements in Java.
 -> They let your program choose which code block to run based on a condition.
 
 Syntax :-
@@ -551,7 +560,8 @@ Enter second number: 20
 10 < 20  : true
 10 >= 20 : false
 10 <= 20 : true
----------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <!-- Logical Operator -->
 -> Logical operators are used to combine two or more conditions.
 -> Mostly used in if, while, for statements for decision-making.
